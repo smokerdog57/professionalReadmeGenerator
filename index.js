@@ -16,9 +16,9 @@ const questions = [
         message: 'Provide a short description of your project:'
     },
     {
-        type: 'input',
+        type: 'editor',
         name: 'installation',
-        message: 'Provide step by step description of how to get dev environment running'
+        message: 'Enter the numbered list of installation steps:',
     },
     {
         type: 'input',
@@ -27,15 +27,36 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'credits',
+        name: 'license',
+        message: 'What is the license for your project?'
+    },
+    {
+        type: 'input',
+        name: 'contributing',
         message: 'List your collaborators, if any, with links to their Github profiles.'
     },
     {
         type: 'input',
-        name: 'license',
-        message: 'What is the license for your project?'
+        name: 'tests',
+        message: 'lists the tests to verify your application',
+    },
+    {
+        type: 'input',
+        name: 'githubusername',
+        message: 'enter your github username',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'enter your email address',
+    },
+    {
+        type: 'input',
+        name: 'phone',
+        message: 'enter your phone number',
     }
 ]
+
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
