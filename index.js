@@ -26,9 +26,10 @@ const questions = [
         message: 'Provide instructions and and examples for use.  Include screenshots as needed '
     },
     {
-        type: 'input',
+        type: 'checkbox',
         name: 'license',
-        message: 'What is the license for your project?'
+        message: 'Check all licenses that apply',
+        choices: ['github','html','css','jses6','node.js','npm','filesystem','inquirer']
     },
     {
         type: 'input',

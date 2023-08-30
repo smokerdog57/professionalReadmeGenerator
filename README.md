@@ -1,10 +1,14 @@
-# xxx
-  
-  ## Description
-  
-  xxx
+# x
 
-  ## Table of Contents
+## Badges
+    
+![github](https://img.shields.io/badge/github-Profile-lightgrey.svg) ![jses6](https://img.shields.io/badge/JavaScript--ES6-yellow.svg) ![node.js](https://img.shields.io/badge/node.js-12.0-green.svg) ![npm](https://img.shields.io/badge/npm-6.14.4-blue.svg) ![filesystem](https://img.shields.io/badge/fs-File_System-red.svg) ![inquirer](https://img.shields.io/badge/Inquirer-8.2.4-purple.svg)
+
+## Description
+  
+x
+
+## Table of Contents
   
   - [Description](#description)
   - [Installation](#installation)
@@ -14,41 +18,48 @@
   
   ## Installation
   
-  1. all steps are performed at the bash terminal within the visual studio.
-  2. within the bootcamp/homework directory, create a new  directory entitled professionalReadmeGenerator.
-  3. within the professionalReadmeGenerator directory, create a new <assets> directory.
-  4. within the <assets> directory, create /images and /utils directory.
-  5. run:  npm init
-  6. run:  npm i inquirer@8.2.4
-  7. copy index.js into the /professionalReadmeGenerator directory.
-  8. copy generateMarkdown.js into the /professionalReadmeGenerator/assets/utils directory.
-  9. invoke the application using the following command: node index.js.
+  x
   
   ## Usage
   
-  xxx
+  x
   
   ## License
   
-  This project is licensed under the xxx License. Click [here](https://opensource.org/licenses/xxx) to learn more.
+  github
+https://opensource.org/licenses/MIT
+
+jses6
+https://opensource.org/licenses/MIT
+
+
+
+npm
+https://opensource.org/licenses/Artistic-2.0
+
+filesystem
+https://opensource.org/licenses/ISC
+
+inquirer
+https://opensource.org/licenses/MIT
+
 
   ## Contributing
   
-  xxx
+  x
 
   ## Tests
   
-  xxx
+  x
 
   ## Questions
   
   ### Github username
-  smokerdog57
+  x
 
   ### Github url
-  https://github.com/smokerdog57/professionalReadmeGenerator
+https://github.com/x/professionalReadmeGenerator
   
   ### Contact me
-  email: smokerdog57@gmail.com
-  phone: 941-221-1132
-  
+email: x
+phone: x
