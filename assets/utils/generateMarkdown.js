@@ -29,8 +29,8 @@ function renderLicenseLink(licenses) {
         'github': 'MIT',
         'html': 'BSD',
         'css': 'MIT',
-        'jses6': 'MIT', // Corrected from 'None (Public Domain)'
-        'node.js': '', // No return value
+        'jses6': 'MIT',
+        'node.js': 'No license required',
         'npm': 'Artistic-2.0',
         'filesystem': 'ISC',
         'inquirer': 'MIT'
@@ -49,21 +49,13 @@ function renderLicenseLink(licenses) {
     return '';
 }
 
-// Create a function that returns the license section of README
-// If there is no license, return an empty string
-// function renderLicenseSection(license) {
-//     if (license) {
-//         return `This project is licensed under the ${license} License. Click [here](https://opensource.org/licenses/${encodeURIComponent(license)}) to learn more.`;
-//     }
-//     return '';
-// }
-
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
     const licenseBadges = renderLicenseBadge(data.license);
     const licenseLinks = renderLicenseLink(data.license);
 
-    return `# ${data.title}
+    return `
+    
+# ${data.title}
 
 ## Badges
     
@@ -75,41 +67,45 @@ ${data.description}
 
 ## Table of Contents
   
-  ${data.description ? '- [Description](#description)\n' : ''
-        }${data.installation ? '  - [Installation](#installation)\n' : ''}${data.usage ? '  - [Usage](#usage)\n' : ''
-        }${data.credits ? '  - [Credits](#credits)\n' : ''}${data.license ? '  - [License](#license)\n' : ''
-        }
+${data.description ? '- [Description](#description)\n' : ''}
+${data.installation ? '- [Installation](#installation)\n' : ''}
+${data.usage ? '- [Usage](#usage)\n' : ''}
+${data.credits ? '- [Credits](#credits)\n' : ''}
+${data.license ? '- [License](#license)\n' : ''}
+${data.contributing ? '- [Contributing](#contributing)\n' : ''}
+${data.tests ? '- [Tests](#tests)\n' : ''}
+${data.githubusername ? '- [Questions](#questions)\n' : ''}
   
-  ## Installation
+## Installation
   
-  ${data.installation}
+${data.installation}
   
-  ## Usage
-  
-  ${data.usage}
-  
-  ## License
-  
-  ${licenseLinks}
+## Usage
+
+${data.usage}
+
+## License
+
+${licenseLinks}
 
 
-  ## Contributing
-  
-  ${data.contributing}
+## Contributing
 
-  ## Tests
-  
-  ${data.tests}
+${data.contributing}
 
-  ## Questions
-  
-  ### Github username
-  ${data.githubusername}
+## Tests
 
-  ### Github url
+${data.tests}
+
+## Questions
+  
+### Github username
+${data.githubusername}
+
+### Github url
 https://github.com/${data.githubusername}/professionalReadmeGenerator
   
-  ### Contact me
+### Contact me
 email: ${data.email}
 phone: ${data.phone}
 `;

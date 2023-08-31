@@ -1,5 +1,6 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
+const path = require('path');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./assets/utils/generateMarkdown');
 
@@ -21,7 +22,7 @@ const questions = [
         message: 'Enter the numbered list of installation steps:',
     },
     {
-        type: 'input',
+        type: 'editor',
         name: 'usage',
         message: 'Provide instructions and and examples for use.  Include screenshots as needed '
     },
@@ -32,17 +33,18 @@ const questions = [
         choices: ['github','html','css','jses6','node.js','npm','filesystem','inquirer']
     },
     {
-        type: 'input',
+        type: 'editor',
         name: 'contributing',
         message: 'List your collaborators, if any, with links to their Github profiles.'
     },
     {
-        type: 'input',
+        type: 'editor',
         name: 'tests',
         message: 'lists the tests to verify your application',
     },
     {
         type: 'input',
+        
         name: 'githubusername',
         message: 'enter your github username',
     },
